@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController" customModule="MyTwitter" customModuleProvider="target">
+            <connections>
+                <outlet property="nameTextField" destination="riL-zV-aDb" id="6aA-gL-k9d"/>
+                <outlet property="profileImageView" destination="QVK-XI-nn8" id="A28-LI-B0r"/>
+                <outlet property="profileLabel" destination="Jdl-fL-wTU" id="QrD-2N-pWN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XRJ-fN-m1e">
+                    <color key="backgroundColor" red="0.15294117647058825" green="0.51764705882352946" blue="0.75294117647058822" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="2Z4-mf-eQg"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QVK-XI-nn8">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="JJ0-x3-yPe"/>
+                        <constraint firstAttribute="width" constant="150" id="mt9-U7-Rvq"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="riL-zV-aDb">
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jdl-fL-wTU">
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Jdl-fL-wTU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="6KE-UP-hC7"/>
+                <constraint firstItem="QVK-XI-nn8" firstAttribute="bottom" secondItem="XRJ-fN-m1e" secondAttribute="bottom" constant="50" id="EOf-b2-FWJ"/>
+                <constraint firstAttribute="trailing" secondItem="Jdl-fL-wTU" secondAttribute="trailing" constant="16" id="Njk-lt-Vtl"/>
+                <constraint firstItem="Jdl-fL-wTU" firstAttribute="top" secondItem="riL-zV-aDb" secondAttribute="bottom" constant="16" id="PRZ-zJ-A8y"/>
+                <constraint firstItem="riL-zV-aDb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="V2p-Mx-ASX"/>
+                <constraint firstAttribute="trailing" secondItem="XRJ-fN-m1e" secondAttribute="trailing" id="ZdM-BC-pNL"/>
+                <constraint firstItem="XRJ-fN-m1e" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ecf-hC-1Gh"/>
+                <constraint firstItem="QVK-XI-nn8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="32" id="emn-mY-8BM"/>
+                <constraint firstItem="XRJ-fN-m1e" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="gcw-BI-SLT"/>
+                <constraint firstAttribute="trailing" secondItem="riL-zV-aDb" secondAttribute="trailing" constant="16" id="mBW-eM-TMz"/>
+                <constraint firstItem="riL-zV-aDb" firstAttribute="top" secondItem="QVK-XI-nn8" secondAttribute="bottom" constant="16" id="ze1-S0-jve"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="148.5"/>
+        </view>
+    </objects>
+</document>
